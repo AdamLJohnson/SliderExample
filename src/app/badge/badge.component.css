@@ -1,0 +1,27 @@
+.my-badge {
+    /* transform: scale(2); */
+    width: 150px;
+}
+
+    .my-badge text{
+        /* white-space: pre; */
+        fill: #fff;
+        font-size: 11.6px;
+        text-anchor: middle;
+    }
+
+.red {
+    fill: #C76B02;
+}
+
+.yellow {
+    fill: #D3B103;
+}
+
+.green {
+    fill: #04BC41;
+}
+
+.rainbow {
+    fill: url('#pattern');
+}
