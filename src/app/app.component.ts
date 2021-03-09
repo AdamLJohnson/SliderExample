@@ -38,7 +38,7 @@ export class AppComponent {
       format: this.dollar
     }
   };
-  title = 'app';
+  title = 'The Playground';
 
   onChange(value: any) {
     this.someValue = value;

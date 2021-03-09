@@ -3,7 +3,13 @@
     <h1>
         Welcome to {{title}}!
     </h1>
-    <app-badge [value]="someValue"></app-badge>
+    
+</div>
+
+<div class="row text-center">
+    <div class="col-md-12">
+        <app-badge [value]="someValue" class="move-me-right"></app-badge>
+    </div>
 </div>
 
 <div class="row" style="margin-top: 50px;">
@@ -14,31 +20,13 @@
     </div>
 </div>
 
-
-<div style="margin-top: 100px;">
-    {{someValue}}
-</div>
-
-<button (click)="boopClick()" class="btn btn-primary boop-btn">Boop</button>
-
-<div class="box" id="boopbox">
-    <h1>list of tiers here</h1>
-</div>
-
 <div class="row">
-    <div class="col-lg">Something goes here {{someValue}}</div>
-    <div class="col-lg">{{someValue}}</div>
-    <div class="col-lg">{{someValue}}</div>
-    <div class="col-lg">{{someValue}}</div>
+    <div class="col-md-1">
+        <button (click)="boopClick()" class="btn btn-primary boop-btn">Boop</button>
+    </div>
+    <div class="col-md-9">
+        <div class="box" id="boopbox">
+            <h1>Some Stuff Goes In This Space</h1>
+        </div>
+    </div>
 </div>
-
-<div class="row d-lg-block">
-    <div class="col-lg">Something goes here {{someValue}}</div>
-    <div class="col-lg">{{someValue}}</div>
-    <div class="col-lg">{{someValue}}</div>
-    <div class="col-lg">{{someValue}}</div>
-</div>
-
-
-<div class="d-lg-none">hide on screens wider than lg</div>
-<div class="d-none d-lg-block">hide on screens smaller than lg</div>

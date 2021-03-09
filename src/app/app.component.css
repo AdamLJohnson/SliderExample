@@ -1,0 +1,8 @@
+div.border-me {
+    border: black 1px solid;
+}
+
+app-badge.move-me-right{
+    position: relative;
+    right: 15px;
+}
