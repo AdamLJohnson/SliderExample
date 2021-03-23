@@ -1,0 +1,80 @@
+<html>
+    <body>
+        <style>
+            .my-badge {
+                width: 150px;
+            }
+
+                .my-badge text{
+                    fill: #fff;
+                    font-size: 11.6px;
+                    text-anchor: middle;
+                }
+
+            .red {
+                fill: #C76B02;
+            }
+
+            .yellow {
+                fill: #D3B103;
+            }
+
+            .green {
+                fill: #04BC41;
+            }
+
+            .rainbow {
+                fill: url('#mbe-gradient');
+            }
+
+            .rainbow-moving {
+                fill: url('#pattern');
+            }
+        </style>
+
+        <svg viewBox="126.3 53.317 39.6 40.049" class="my-badge green">
+            <defs>  
+                <linearGradient id="badge-gradient" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="violet" />
+                    <stop offset="14%" stop-color="indigo" />
+                    <stop offset="28%" stop-color="blue" />
+                    <stop offset="42%" stop-color="green" />
+                    <stop offset="56%" stop-color="yellow" />
+                    <stop offset="70%" stop-color="orange" />
+                    <stop offset="84%" stop-color="red" />
+                    <stop offset="100%" stop-color="violet" />
+                    <!-- <stop offset="0%" stop-color="#3d6d79" />
+                    <stop offset="75%" stop-color="#45c0b9" />
+                    <stop offset="100%" stop-color="#3d6d79" /> -->
+                </linearGradient>
+            
+                <linearGradient id="mbe-gradient" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="#3d6d79" />
+                    <stop offset="75%" stop-color="#45c0b9" />
+                    <stop offset="100%" stop-color="#3d6d79" />
+                </linearGradient>
+            
+                <pattern id="pattern" x="0" y="0" width="100%" height="100%">
+                    <rect x="0" y="0%" width="100%" height="105%" fill="url(#badge-gradient)">
+                    <animate attributeType="XML"
+                                attributeName="y"
+                                from="0%" to="100%"
+                                dur="1.5s"
+                                repeatCount="indefinite"/>
+                    </rect>
+                    <rect x="0" y="-100%" width="100%" height="105%" fill="url(#badge-gradient)">
+                    <animate attributeType="XML"
+                                attributeName="y"
+                                from="-100%" to="0%"
+                                dur="1.5s"
+                                repeatCount="indefinite"/>
+                    </rect>
+                </pattern>
+            </defs>
+            <circle cx="204.776" cy="135.204" r="14.565" transform="matrix(1, 0, 0, 1, -58.675873, -56.4034)"></circle>
+            <path d="M 184.976 110.112 L 196.543 109.72 L 202.228 118.737 C 200.66 117.691 192.034 122.004 193.602 123.05 L 184.976 110.112 Z" transform="matrix(1, 0, 0, 1, -58.675873, -56.4034)"></path>
+            <path d="M 165.9 53.709 L 154.333 53.317 L 148.648 62.334 C 150.216 61.288 158.842 65.601 157.274 66.647 L 165.9 53.709 Z"></path>
+            <text x="204.775" y="139.717" transform="matrix(1, 0, 0, 1, -58.675873, -56.4034)">99%</text>
+        </svg>
+    </body>
+</html>
