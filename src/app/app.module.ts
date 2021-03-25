@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { NouisliderModule } from 'ng2-nouislider';
 import { BadgeComponent } from './badge/badge.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { BadgeComponent } from './badge/badge.component';
   ],
   imports: [
     BrowserModule,
-    NouisliderModule
+    NouisliderModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

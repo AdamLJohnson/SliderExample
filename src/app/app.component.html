@@ -15,7 +15,10 @@
 <div class="row" style="margin-top: 50px;">
     <div class="col-md-12">
         <div class="slider-wrapper">
-            <nouislider [config]="someConfig" [ngModel]="someValue" (update)="onChange($event)" [ngClass]="{'over-gi': someValue > 10 }"></nouislider>
+            <!-- [(ngModel)]="someValue"  -->
+            <nouislider [config]="someConfig" 
+                (update)="onChange($event)"
+                [ngClass]="{'over-gi': someValue > 10 }"></nouislider>
         </div>
     </div>
 </div>

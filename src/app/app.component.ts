@@ -29,7 +29,9 @@ export class AppComponent {
     connect: "lower",
     snap: true,
     range: this.range,
+    start: 10,
     tooltips: [this.dollar],
+    //behaviour: 'tap',
     pips: {
       mode: 'values',
       values: [0, 100],
@@ -52,6 +54,7 @@ export class AppComponent {
   }
 
   boopClick() {
+    this.someValue = 70;
     var box = document.getElementById("boopbox");
     box.setAttribute("class", "box");
     setTimeout(function () {
