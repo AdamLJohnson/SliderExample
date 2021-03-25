@@ -42,8 +42,15 @@ export class AppComponent {
   };
   title = 'The Playground';
 
+  public locked:boolean = false;
+  lastValue:number = this.someValue;
   onChange(value: any) {
-    this.someValue = value;
+    if(this.locked){
+      this.someValue = this.lastValue;
+    } else {
+      this.someValue = value;
+      this.lastValue = value;
+    }    
   }
 
   private threshold: number = 1;
@@ -54,7 +61,7 @@ export class AppComponent {
   }
 
   boopClick() {
-    this.someValue = 70;
+    this.locked = !this.locked;
     var box = document.getElementById("boopbox");
     box.setAttribute("class", "box");
     setTimeout(function () {

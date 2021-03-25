@@ -15,8 +15,14 @@
 <div class="row" style="margin-top: 50px;">
     <div class="col-md-12">
         <div class="slider-wrapper">
-            <!-- [(ngModel)]="someValue"  -->
-            <nouislider [config]="someConfig" 
+            <!-- [(ngModel)]="someValue"  -->            
+            <!-- (start)="onSomeTestEvent('start', $event)"
+            (slide)="onSomeTestEvent('slide', $event)"
+            (update)="onSomeTestEvent('update', $event)"
+            (change)="onSomeTestEvent('change', $event)"
+            (set)="onSomeTestEvent('set', $event)"
+            (end)="onSomeTestEvent('end', $event)" -->
+            <nouislider [config]="someConfig" [(ngModel)]="someValue"
                 (update)="onChange($event)"
                 [ngClass]="{'over-gi': someValue > 10 }"></nouislider>
         </div>
@@ -29,7 +35,7 @@
     </div>
     <div class="col-md-9">
         <div class="box" id="boopbox">
-            <h1>Some Stuff Goes In This Space</h1>
+            <h1>Some Stuff Goes here {{locked}}</h1>
         </div>
     </div>
 </div>
